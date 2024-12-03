@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Young";
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(330, 100%, 98%);
+  color: hsl(24, 5%, 18%);
+}
+
+.title {
+  font-family: "Young";
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1px;
+  font-size: 48px;
+}
+
+.subtitle {
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1px;
+  padding-top: 12px;
+}
+
+.custom {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.custom-body {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.custom-cover {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.custom-cover > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.custom-preparation {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background: hsl(330, 100%, 98%);
+  padding: 24px;
+}
+.custom-preparation > h3 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+
+ul,
+ol {
+  margin-left: 24px;
+}
+
+.item-preparation {
+  color: hsl(332, 51%, 32%);
+  padding-bottom: 12px;
+}
+.item-preparation > p {
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  font-weight: 400;
+}
+.item-preparation > p > span {
+  font-weight: 700;
+}
+
+.recipe {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.recipe:last-child {
+  border-bottom: none;
+}
+.recipe-title {
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: hsl(14, 45%, 36%);
+  font-family: "Young";
+  font-size: 32px;
+  padding-bottom: 12px;
+}
+.recipe-list {
+  color: hsl(14, 45%, 36%);
+  padding-top: 12px;
+  font-weight: 700;
+}
+.recipe-list > p {
+  padding-left: 12px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+.recipe-list > p > span {
+  font-weight: 700;
+  padding-right: 4px;
+}
+.recipe-text {
+  padding-left: 12px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+.recipe-text > span {
+  font-weight: 700;
+  padding-right: 4px;
+}
+
+.table {
+  margin-left: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.table-body {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+.table-span {
+  padding-left: 12px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  width: 50%;
+}
+.table-span > span {
+  font-weight: 700;
+  padding-right: 4px;
+}
+.table-text {
+  padding-left: 12px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+.table-text > span {
+  font-weight: 700;
+  padding-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    line-height: 100%;
+    font-size: 36px;
+  }
+  .subtitle {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .mobile {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .custom {
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .custom-body {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .custom-cover {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    margin-bottom: 24px;
+  }
+  .custom-cover > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0;
+  }
+  .custom-preparation > h3 {
+    font-size: 24px;
+  }
+  .recipe-title {
+    font-size: 24px;
+  }
+}
